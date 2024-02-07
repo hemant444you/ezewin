@@ -6,9 +6,6 @@ const Contest = require("../Models/Contest.js");
 const Quiz = require("../Models/Quiz.js");
 const nodemailer = require('nodemailer');
 const pdf = require('html-pdf');
-const html_to_pdf  = require('html-pdf-node');
-const axios = require('axios');
-const jsPDF = require('jspdf');
 var PdfDocument = require("@ironsoftware/ironpdf");
 // const puppeteer = require('puppeteer');
 
