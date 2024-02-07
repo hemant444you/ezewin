@@ -135,6 +135,10 @@ app.use("/admin",isAdmin,adminRouter);
 app.use("/guest-api", apiRouter);
 app.use("/api", auth, apiRouter);
 
+app.get('/test',function(){
+  
+})
+
 scheduledFunctions.initScheduledJobs();
 
 

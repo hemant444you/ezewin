@@ -5,7 +5,6 @@ const Setting = require("../Models/Setting.js");
 const Contest = require("../Models/Contest.js");
 const Quiz = require("../Models/Quiz.js");
 const nodemailer = require('nodemailer');
-const pdf = require('html-pdf');
 var PdfDocument = require("@ironsoftware/ironpdf");
 // const puppeteer = require('puppeteer');
 
@@ -18,10 +17,7 @@ module.exports = {
 	},
 	
 	load_result : async (req, res) => {
-	    const setting = await Setting.findOne().skip(0);
-	    contest = await Contest.findById(req.params.id);
-		quizzes = await Quiz.find({contest:req.params.id}).populate('user').sort({winning:-1});
-		res.render('load_result',{quizzes,contest,quizzes});
+	    //
 	},
 	download_result : async (req, res) => {
 	    const url = 'https://admin.ezewin.analogueitsolutions.com/load-result/' + req.params.id;
