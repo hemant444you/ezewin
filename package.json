@@ -37,7 +37,7 @@
     "nodemon": "^3.0.1",
     "puppeteer": "^14.03.0",
     "puppeteer-core": "^14.03.0",
-    "razorpay": "^0.0.0",
+    "razorpay": "^2.9.2",
     "unique-string": "^3.0.0",
     "unique-string-generator": "^1.1.1"
   }
